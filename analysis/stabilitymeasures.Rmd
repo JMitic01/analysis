@@ -1,0 +1,78 @@
+---
+title: "stabilitymeasures"
+author: "JMitic01"
+date: "2024-07-23"
+output: workflowr::wflow_html
+editor_options:
+  chunk_output_type: console
+---
+
+## 1. Introduction
+
+Stability measures are essential for evaluating the reliability and robustness of clustering methods. They help in assessing whether the clustering results are consistent across different datasets or subsets of the data. This document discusses stability measures with a focus on the Adjusted Rand Index (ARI), the general framework for assessing stability, and methods to evaluate stability through subsampling.
+
+## 2. Adjusted Rand Index (ARI)
+
+The Adjusted Rand Index (ARI) is a widely used metric for evaluating the similarity between two clusterings. It adjusts the Rand Index (RI) for the chance grouping of elements, providing a measure of clustering agreement that ranges from -1 to 1.
+
+### 2.1 Definition
+
+The ARI is defined as:
+
+\[ \text{ARI} = \frac{\text{RI} - \text{Expected RI}}{\text{Max RI} - \text{Expected RI}} \]
+
+where:
+
+- **RI** is the Rand Index.
+- **Expected RI** is the expected Rand Index under the null hypothesis of random clustering.
+- **Max RI** is the maximum possible Rand Index.
+
+### 2.2 Calculation
+
+Given two clusterings \( C_1 \) and \( C_2 \), let \( a \), \( b \), \( c \), and \( d \) be the counts of pairs of objects that are:
+
+- **a**: in the same cluster in both \( C_1 \) and \( C_2 \).
+- **b**: in the same cluster in \( C_1 \) but in different clusters in \( C_2 \).
+- **c**: in different clusters in \( C_1 \) but in the same cluster in \( C_2 \).
+- **d**: in different clusters in both \( C_1 \) and \( C_2 \).
+
+The Rand Index is then:
+
+\[ \text{RI} = \frac{a + d}{a + b + c + d} \]
+
+The Expected RI and Max RI are computed based on the probabilities of randomly assigning objects to clusters.
+
+### 2.2.1 Global Replicability
+
+Global replicability evaluates how consistent a clustering solution is across perturbed versions of the dataset. The steps are:
+
+1. **Clustering**:
+   - Apply the clustering algorithm to the original dataset \( X \) to obtain a partition.
+   - Apply the clustering algorithm to each perturbed dataset \( X^{(b)} \) to obtain corresponding partitions.
+
+2. **Comparing Partitions**:
+   - For each perturbed dataset \( X^{(b)} \), calculate the minimal matching distance between the clustering partition obtained from equation (3).
+   - **Equation for Minimal Matching Distance**:
+     \[
+     d_{\text{min}} = \min_{\pi \in \Pi} \sum_{i=1}^k \sum_{j=1}^k \text{dist}(C_i, C_j^\pi)
+     \]
+     where \( \Pi \) represents all possible permutations of clusters, \( C_i \) and \( C_j^\pi \) are the clusters from the original and perturbed datasets, respectively, and \(\text{dist}\) is a distance metric between clusters.
+
+3. **Averaging the Distances**:
+   - The stability measure is obtained by averaging these minimal matching distances across all \( B \) perturbed datasets.
+
+## 3. General Framework for Assessing Stability
+
+Assessing stability involves evaluating how clustering results change when the data is varied. The general framework includes the following steps:
+
+1. **Clustering Multiple Subsamples**: Perform clustering on multiple subsets of the data.
+2. **Evaluating Consistency**: Measure how consistent the clustering results are across these subsets.
+3. **Quantifying Stability**: Use stability measures to quantify the level of consistency.
+
+### 3.2 Evaluating Consistency
+
+The consistency of clustering results can be evaluated by comparing the cluster assignments across different subsamples. Metrics such as the ARI can be used to measure the similarity between clusterings on different subsets. In our 'Result' section we divided the data into three subsets (n=0.75, n=0.5, and n=0.25). In addition, we quantified the stability by averaging stability measures across all subsamples. A higher average indicates greater stability.
+
+
+
+

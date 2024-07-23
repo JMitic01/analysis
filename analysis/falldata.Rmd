@@ -1,0 +1,19 @@
+---
+title: "falldata"
+author: "JMitic01"
+date: "2024-07-23"
+output: workflowr::wflow_html
+editor_options:
+  chunk_output_type: console
+---
+
+## 1. Introduction
+
+The number of elderly people living alone has been continuously growing worldwide. This independence comes with the risk of not receiving prompt attention if an accident occurs. On average, one third of people over 65 years old suffer a fall each year, and this number increases with age and previous falls, with about one third developing a fear of falling again. Not receiving attention within the first hour of an accident increases the risk of death and chronic conditions. This issue has been addressed with fall detection systems that generate prompt alerts, reducing the consequences related to delayed medical response.
+
+This work introduces a publicly available dataset of falls and activities of daily living (ADLs) collected with a wearable device, including results from commonly used detection features tested on both young and elderly individuals. In terms of the participants, the dataset includes 19 ADLs and 15 fall types performed by 23 young adults (19–30 years old), 15 ADL types performed by 14 healthy and independent participants over 62 years old, and data from one participant of 60 years old who performed all ADLs and falls. Activities were selected based on a survey and literature analysis.
+
+## Processing Data
+
+The raw data are provided as 3-dimensional accelerator vectors $(a_x(t), a_y(t), a_z(t) )$  collected at a 200 Hz frequency. The data were pre-processed by calculating the signal magnitude vector (SMV) at each time point as $SMV _t= \sqrt{ a_x(t)^2 +  a_y(t)^2 + a_z(t)^2 }$.  Three features were extracted from each activity for subsequent analyses: $max = max (SMV_t)$, $min = min(SMV_t)$, and $max_ diff = max ( | SMV_t - SMV_{t-1} | )$ .
+

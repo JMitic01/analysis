@@ -9,3 +9,19 @@ editor_options:
 ---
 
 Welcome to my research website.
+
+## General Summary
+
+[Literature Review](generalsummary.html) \\
+[Fall Data Set](falldata.html)
+
+
+## Stability Measures
+
+[ARI Index](stabilitymeasures.Rmd)
+
+## Model Selection using BIC
+
+Here is the link:
+
+## Results
