@@ -521,15 +521,15 @@ project makes it easier to run your code on other machines.</p>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomJMitic01analysistreeccb1e534e133f5d65370d7fef722192abd6839cetargetblankccb1e53a">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomJMitic01analysistree0d99fdab6c9b10b6e0ccab5c7e55e4bd49d76b55targetblank0d99fdaa">
 <span class="glyphicon glyphicon-ok text-success"
 aria-hidden="true"></span> <strong>Repository version:</strong>
-<a href="https://github.com/JMitic01/analysis/tree/ccb1e534e133f5d65370d7fef722192abd6839ce" target="_blank">ccb1e53</a>
+<a href="https://github.com/JMitic01/analysis/tree/0d99fdab6c9b10b6e0ccab5c7e55e4bd49d76b55" target="_blank">0d99fda</a>
 </a>
 </p>
 </div>
 <div
-id="strongRepositoryversionstrongahrefhttpsgithubcomJMitic01analysistreeccb1e534e133f5d65370d7fef722192abd6839cetargetblankccb1e53a"
+id="strongRepositoryversionstrongahrefhttpsgithubcomJMitic01analysistree0d99fdab6c9b10b6e0ccab5c7e55e4bd49d76b55targetblank0d99fdaa"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -539,7 +539,7 @@ reproducibility.
 </p>
 <p>
 The results in this page were generated with repository version
-<a href="https://github.com/JMitic01/analysis/tree/ccb1e534e133f5d65370d7fef722192abd6839ce" target="_blank">ccb1e53</a>.
+<a href="https://github.com/JMitic01/analysis/tree/0d99fdab6c9b10b6e0ccab5c7e55e4bd49d76b55" target="_blank">0d99fda</a>.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -557,9 +557,6 @@ Ignored files:
     Ignored:    .RData
     Ignored:    .Rhistory
     Ignored:    .Rproj.user/
-
-Untracked files:
-    Untracked:  images/
 
 </code></pre>
 <p>
@@ -604,6 +601,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/JMitic01/analysis/blob/0d99fdab6c9b10b6e0ccab5c7e55e4bd49d76b55/analysis/SA08.Rmd" target="_blank">0d99fda</a>
+</td>
+<td>
+JMitic01
+</td>
+<td>
+2024-07-23
+</td>
+<td>
+uploading external image
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/JMitic01/analysis/97e915f12fd88807277ecbc02e2c25dbc15ed19f/docs/SA08.html" target="_blank">97e915f</a>
+</td>
+<td>
+JMitic01
+</td>
+<td>
+2024-07-23
+</td>
+<td>
+Build site.
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -704,6 +735,43 @@ plot3 &lt;- ggplot(selected_data, aes(x = max, y = max_diff)) +
   guides(shape = guide_legend(override.aes = list(size = 2)))  # Adjust legend size
 grid.arrange(plot1, plot2,plot3, ncol = 3)</code></pre>
 <p><img src="figure/SA08.Rmd/plot-data-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-plot-data-1">
+Past versions of plot-data-1.png
+</button>
+</p>
+<div id="fig-plot-data-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/JMitic01/analysis/blob/97e915f12fd88807277ecbc02e2c25dbc15ed19f/docs/figure/SA08.Rmd/plot-data-1.png" target="_blank">97e915f</a>
+</td>
+<td>
+JMitic01
+</td>
+<td>
+2024-07-23
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <pre class="r"><code>G_values &lt;- 1:10
 model_names &lt;- c(&quot;EVI&quot;, &quot;EEI&quot;, &quot;EEV&quot;, &quot;VVV&quot;, &quot;EII&quot;)
 best_bic &lt;- -Inf
@@ -801,68 +869,7 @@ ari_results &lt;- map_df(n_values, function(n) {
 })
 
 ari_results &lt;- ari_results %&gt;% filter(!is.na(ARI))
-print(ari_results)</code></pre>
-<pre><code>   n_fraction       ARI
-1        0.75 0.7224233
-2        0.75 0.5949828
-3        0.75 0.7117661
-4        0.75 0.4899768
-5        0.75 0.6606047
-6        0.75 0.6135549
-7        0.75 0.5133803
-8        0.75 0.6149356
-9        0.75 0.5015634
-10       0.75 0.5414265
-11       0.75 0.9459714
-12       0.75 0.9587508
-13       0.75 0.6922452
-14       0.75 0.7960099
-15       0.75 0.7634807
-16       0.75 0.7857568
-17       0.75 0.7503705
-18       0.75 0.6925058
-19       0.75 0.5729635
-20       0.75 0.5918637
-21       0.50 0.5985080
-22       0.50 0.6777178
-23       0.50 0.7599798
-24       0.50 0.6665609
-25       0.50 0.4554697
-26       0.50 0.5806251
-27       0.50 0.5752157
-28       0.50 0.5321032
-29       0.50 0.5771914
-30       0.50 0.4616517
-31       0.50 0.5709849
-32       0.50 0.8174643
-33       0.50 0.6209145
-34       0.50 0.6554608
-35       0.50 0.4568700
-36       0.50 0.6863586
-37       0.50 0.7542049
-38       0.50 0.5547325
-39       0.50 0.6198210
-40       0.50 0.4037848
-41       0.25 0.5609799
-42       0.25 0.4931308
-43       0.25 0.7250114
-44       0.25 0.5971347
-45       0.25 0.4591655
-46       0.25 0.4575926
-47       0.25 0.7396566
-48       0.25 0.7288855
-49       0.25 0.4159513
-50       0.25 0.5258997
-51       0.25 0.5068269
-52       0.25 0.3911867
-53       0.25 0.5804902
-54       0.25 0.5845972
-55       0.25 0.6414794
-56       0.25 0.3926166
-57       0.25 0.4219796
-58       0.25 0.6004451
-59       0.25 0.4364263
-60       0.25 0.3564451</code></pre>
+#print(ari_results)</code></pre>
 <p>The ARI results for n_fraction = 0.75 show a range of values,
 indicating variability in the clustering stability when 75% of the data
 is used. The ARI values range from a minimum of 0.4917510 to a maximum
@@ -895,6 +902,43 @@ ggplot(ari_results, aes(x = as.factor(n_fraction), y = ARI)) +
   labs(x = &quot;n Fraction&quot;, y = &quot;ARI&quot;, title = &quot;ARI Values for G = 2&quot;) +
   theme_minimal()</code></pre>
 <p><img src="figure/SA08.Rmd/plot-ari-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-plot-ari-1">
+Past versions of plot-ari-1.png
+</button>
+</p>
+<div id="fig-plot-ari-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/JMitic01/analysis/blob/97e915f12fd88807277ecbc02e2c25dbc15ed19f/docs/figure/SA08.Rmd/plot-ari-1.png" target="_blank">97e915f</a>
+</td>
+<td>
+JMitic01
+</td>
+<td>
+2024-07-23
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <p>Now, we will perform the same analysis but for G=2 up to G=10.</p>
 <pre class="r"><code>find_best_model &lt;- function(data, G) {
   model_names &lt;- c(&quot;EVI&quot;, &quot;EEI&quot;, &quot;EEV&quot;, &quot;VVV&quot;, &quot;EII&quot;)
@@ -999,199 +1043,16 @@ ari_results_G10 &lt;- final_ari_results %&gt;% filter(G == 10)
 
 
 # Print the ARI results for each G value
-print(&quot;ARI results for G = 3:&quot;)</code></pre>
-<pre><code>[1] &quot;ARI results for G = 3:&quot;</code></pre>
-<pre class="r"><code>print(ari_results_G3)</code></pre>
-<pre><code>   n_fraction G       ARI
-1        0.75 3 0.2730047
-2        0.75 3 0.4909219
-3        0.75 3 0.3681082
-4        0.75 3 0.1790071
-5        0.75 3 0.1987270
-6        0.75 3 0.3586545
-7        0.75 3 0.4747662
-8        0.75 3 0.2795123
-9        0.75 3 0.4185037
-10       0.75 3 0.3049255
-11       0.75 3 0.2374207
-12       0.75 3 0.2796663
-13       0.75 3 0.4554207
-14       0.75 3 0.4289860
-15       0.75 3 0.2161668
-16       0.75 3 0.3639305
-17       0.75 3 0.4111607
-18       0.75 3 0.2664529
-19       0.75 3 0.2676044
-20       0.75 3 0.2946228
-21       0.50 3 0.4287207
-22       0.50 3 0.1892978
-23       0.50 3 0.3993675
-24       0.50 3 0.4768739
-25       0.50 3 0.3876460
-26       0.50 3 0.4739030
-27       0.50 3 0.5431010
-28       0.50 3 0.3443812
-29       0.50 3 0.4065661
-30       0.50 3 0.4488179
-31       0.50 3 0.4179622
-32       0.50 3 0.4250930
-33       0.50 3 0.1918497
-34       0.50 3 0.4261713
-35       0.50 3 0.2530110
-36       0.50 3 0.3228653
-37       0.50 3 0.3774093
-38       0.50 3 0.2202487
-39       0.50 3 0.4388995
-40       0.50 3 0.2672899
-41       0.25 3 0.3803828
-42       0.25 3 0.4319406
-43       0.25 3 0.2016205
-44       0.25 3 0.3749884
-45       0.25 3 0.5109097
-46       0.25 3 0.4898209
-47       0.25 3 0.2913908
-48       0.25 3 0.2291389
-49       0.25 3 0.2263390
-50       0.25 3 0.3590805
-51       0.25 3 0.4922647
-52       0.25 3 0.3660439
-53       0.25 3 0.4813412
-54       0.25 3 0.4091393
-55       0.25 3 0.3704573
-56       0.25 3 0.4105720
-57       0.25 3 0.4660859
-58       0.25 3 0.2660448
-59       0.25 3 0.3768809
-60       0.25 3 0.4398743</code></pre>
-<pre class="r"><code>print(&quot;ARI results for G = 4:&quot;)</code></pre>
-<pre><code>[1] &quot;ARI results for G = 4:&quot;</code></pre>
-<pre class="r"><code>print(ari_results_G4)</code></pre>
-<pre><code>   n_fraction G       ARI
-1        0.75 4 0.5382164
-2        0.75 4 0.4359714
-3        0.75 4 0.3933751
-4        0.75 4 0.3830689
-5        0.75 4 0.3574333
-6        0.75 4 0.5502331
-7        0.75 4 0.7051026
-8        0.75 4 0.5401490
-9        0.75 4 0.3935810
-10       0.75 4 0.4828182
-11       0.75 4 0.5355536
-12       0.75 4 0.6221200
-13       0.75 4 0.6645777
-14       0.75 4 0.5207882
-15       0.75 4 0.5861191
-16       0.75 4 0.5045403
-17       0.75 4 0.6425011
-18       0.75 4 0.3930931
-19       0.75 4 0.5922544
-20       0.75 4 0.5244826
-21       0.50 4 0.5515573
-22       0.50 4 0.5378021
-23       0.50 4 0.4723343
-24       0.50 4 0.5061544
-25       0.50 4 0.6491287
-26       0.50 4 0.5532056
-27       0.50 4 0.6308303
-28       0.50 4 0.5887447
-29       0.50 4 0.5718434
-30       0.50 4 0.5670797
-31       0.50 4 0.5706029
-32       0.50 4 0.6481342
-33       0.50 4 0.6358093
-34       0.50 4 0.5720846
-35       0.50 4 0.5111964
-36       0.50 4 0.5662342
-37       0.50 4 0.4764034
-38       0.50 4 0.5142186
-39       0.50 4 0.5976116
-40       0.50 4 0.3186835
-41       0.25 4 0.8270927
-42       0.25 4 0.5238311
-43       0.25 4 0.6618672
-44       0.25 4 0.6541418
-45       0.25 4 0.6423144
-46       0.25 4 0.6897905
-47       0.25 4 0.2999268
-48       0.25 4 0.3706978
-49       0.25 4 0.6289570
-50       0.25 4 0.4266866
-51       0.25 4 0.4550267
-52       0.25 4 0.2893273
-53       0.25 4 0.5269238
-54       0.25 4 0.5450711
-55       0.25 4 0.4444343
-56       0.25 4 0.3493665
-57       0.25 4 0.4621735
-58       0.25 4 0.5431364
-59       0.25 4 0.3965363
-60       0.25 4 0.4052453</code></pre>
-<pre class="r"><code>print(&quot;ARI results for G = 5:&quot;)</code></pre>
-<pre><code>[1] &quot;ARI results for G = 5:&quot;</code></pre>
-<pre class="r"><code>print(ari_results_G5)</code></pre>
-<pre><code>   n_fraction G       ARI
-1        0.75 5 0.4020144
-2        0.75 5 0.4169352
-3        0.75 5 0.3805581
-4        0.75 5 0.4726992
-5        0.75 5 0.3997419
-6        0.75 5 0.4106034
-7        0.75 5 0.4464909
-8        0.75 5 0.4227980
-9        0.75 5 0.4510080
-10       0.75 5 0.3757523
-11       0.75 5 0.3880743
-12       0.75 5 0.4308185
-13       0.75 5 0.4951498
-14       0.75 5 0.4463779
-15       0.75 5 0.4890082
-16       0.75 5 0.4439929
-17       0.75 5 0.4089339
-18       0.75 5 0.4731496
-19       0.75 5 0.3732083
-20       0.75 5 0.3959120
-21       0.50 5 0.3330922
-22       0.50 5 0.4325231
-23       0.50 5 0.4628297
-24       0.50 5 0.3407317
-25       0.50 5 0.5302379
-26       0.50 5 0.4696986
-27       0.50 5 0.5378463
-28       0.50 5 0.4386930
-29       0.50 5 0.5145270
-30       0.50 5 0.5401469
-31       0.50 5 0.3153167
-32       0.50 5 0.3493048
-33       0.50 5 0.6204754
-34       0.50 5 0.3363609
-35       0.50 5 0.4291090
-36       0.50 5 0.4138788
-37       0.50 5 0.4739801
-38       0.50 5 0.4789827
-39       0.50 5 0.4362219
-40       0.50 5 0.3987651
-41       0.25 5 0.6206533
-42       0.25 5 0.4042027
-43       0.25 5 0.5380892
-44       0.25 5 0.4682425
-45       0.25 5 0.4010682
-46       0.25 5 0.6031164
-47       0.25 5 0.5252539
-48       0.25 5 0.3626555
-49       0.25 5 0.4198553
-50       0.25 5 0.4062091
-51       0.25 5 0.4662665
-52       0.25 5 0.5358887
-53       0.25 5 0.4280474
-54       0.25 5 0.6045499
-55       0.25 5 0.4878927
-56       0.25 5 0.5482183
-57       0.25 5 0.4398732
-58       0.25 5 0.4754615
-59       0.25 5 0.5175933
-60       0.25 5 0.4445120</code></pre>
-<pre class="r"><code># Plot the ARI results
+#print(&quot;ARI results for G = 3:&quot;)
+#print(ari_results_G3)
+
+#print(&quot;ARI results for G = 4:&quot;)
+#print(ari_results_G4)
+
+#print(&quot;ARI results for G = 5:&quot;)
+#print(ari_results_G5)
+
+# Plot the ARI results
 ggplot(final_ari_results, aes(x = as.factor(G), y = ARI, fill = as.factor(n_fraction))) +
   geom_boxplot() +
   labs(title = &quot;ARI Stability Analysis for Different G Values&quot;,
@@ -1200,6 +1061,43 @@ ggplot(final_ari_results, aes(x = as.factor(G), y = ARI, fill = as.factor(n_frac
        fill = &quot;Subsample Fraction&quot;) +
   theme_minimal()</code></pre>
 <p><img src="figure/SA08.Rmd/ari_moreGvalues-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-ari_moreGvalues-1">
+Past versions of ari_moreGvalues-1.png
+</button>
+</p>
+<div id="fig-ari_moreGvalues-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/JMitic01/analysis/blob/97e915f12fd88807277ecbc02e2c25dbc15ed19f/docs/figure/SA08.Rmd/ari_moreGvalues-1.png" target="_blank">97e915f</a>
+</td>
+<td>
+JMitic01
+</td>
+<td>
+2024-07-23
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <br>
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">

@@ -394,7 +394,7 @@ class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
 </p>
 <p>
 <strong>Checks:</strong> <span
-class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 2
+class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 7
 <span class="glyphicon glyphicon-exclamation-sign text-danger"
 aria-hidden="true"></span> 0
 </p>
@@ -437,15 +437,99 @@ results.</p>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomJMitic01analysistreeccb1e534e133f5d65370d7fef722192abd6839cetargetblankccb1e53a">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongEnvironmentstrongempty">
+<span class="glyphicon glyphicon-ok text-success"
+aria-hidden="true"></span> <strong>Environment:</strong> empty </a>
+</p>
+</div>
+<div id="strongEnvironmentstrongempty" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Great job! The global environment was empty. Objects defined in the
+global environment can affect the analysis in your R Markdown file in
+unknown ways. For reproduciblity it’s best to always run the code in an
+empty environment.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongSeedstrongcodesetseed20240723code">
+<span class="glyphicon glyphicon-ok text-success"
+aria-hidden="true"></span> <strong>Seed:</strong>
+<code>set.seed(20240723)</code> </a>
+</p>
+</div>
+<div id="strongSeedstrongcodesetseed20240723code"
+class="panel-collapse collapse">
+<div class="panel-body">
+<p>The command <code>set.seed(20240723)</code> was run prior to running
+the code in the R Markdown file. Setting a seed ensures that any results
+that rely on randomness, e.g. subsampling or permutations, are
+reproducible.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongSessioninformationstrongrecorded">
+<span class="glyphicon glyphicon-ok text-success"
+aria-hidden="true"></span> <strong>Session information:</strong>
+recorded </a>
+</p>
+</div>
+<div id="strongSessioninformationstrongrecorded"
+class="panel-collapse collapse">
+<div class="panel-body">
+<p>Great job! Recording the operating system, R version, and package
+versions is critical for reproducibility.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongCachestrongnone">
+<span class="glyphicon glyphicon-ok text-success"
+aria-hidden="true"></span> <strong>Cache:</strong> none </a>
+</p>
+</div>
+<div id="strongCachestrongnone" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Nice! There were no cached chunks for this analysis, so you can be
+confident that you successfully produced the results during this
+run.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongFilepathsstrongrelative">
+<span class="glyphicon glyphicon-ok text-success"
+aria-hidden="true"></span> <strong>File paths:</strong> relative </a>
+</p>
+</div>
+<div id="strongFilepathsstrongrelative" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Great job! Using relative paths to the files within your workflowr
+project makes it easier to run your code on other machines.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomJMitic01analysistree0d99fdab6c9b10b6e0ccab5c7e55e4bd49d76b55targetblank0d99fdaa">
 <span class="glyphicon glyphicon-ok text-success"
 aria-hidden="true"></span> <strong>Repository version:</strong>
-<a href="https://github.com/JMitic01/analysis/tree/ccb1e534e133f5d65370d7fef722192abd6839ce" target="_blank">ccb1e53</a>
+<a href="https://github.com/JMitic01/analysis/tree/0d99fdab6c9b10b6e0ccab5c7e55e4bd49d76b55" target="_blank">0d99fda</a>
 </a>
 </p>
 </div>
 <div
-id="strongRepositoryversionstrongahrefhttpsgithubcomJMitic01analysistreeccb1e534e133f5d65370d7fef722192abd6839cetargetblankccb1e53a"
+id="strongRepositoryversionstrongahrefhttpsgithubcomJMitic01analysistree0d99fdab6c9b10b6e0ccab5c7e55e4bd49d76b55targetblank0d99fdaa"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -455,7 +539,7 @@ reproducibility.
 </p>
 <p>
 The results in this page were generated with repository version
-<a href="https://github.com/JMitic01/analysis/tree/ccb1e534e133f5d65370d7fef722192abd6839ce" target="_blank">ccb1e53</a>.
+<a href="https://github.com/JMitic01/analysis/tree/0d99fdab6c9b10b6e0ccab5c7e55e4bd49d76b55" target="_blank">0d99fda</a>.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -473,9 +557,6 @@ Ignored files:
     Ignored:    .RData
     Ignored:    .Rhistory
     Ignored:    .Rproj.user/
-
-Untracked files:
-    Untracked:  images/
 
 </code></pre>
 <p>
@@ -520,6 +601,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/JMitic01/analysis/blob/0d99fdab6c9b10b6e0ccab5c7e55e4bd49d76b55/analysis/bic.Rmd" target="_blank">0d99fda</a>
+</td>
+<td>
+JMitic01
+</td>
+<td>
+2024-07-23
+</td>
+<td>
+uploading external image
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/JMitic01/analysis/97e915f12fd88807277ecbc02e2c25dbc15ed19f/docs/bic.html" target="_blank">97e915f</a>
+</td>
+<td>
+JMitic01
+</td>
+<td>
+2024-07-23
+</td>
+<td>
+Build site.
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -610,10 +725,8 @@ goodness-of-fit. By using <code>mclust</code>, analysts can
 systematically compare various clustering models and make informed
 decisions about the most appropriate model for their data, enhancing the
 reliability and interpretability of clustering results.</p>
-<div class="float">
-<img src="images/bictable.png" alt="BIC Table" />
-<div class="figcaption">BIC Table</div>
-</div>
+<pre class="r"><code>knitr::include_graphics(&quot;assets/bic table.png&quot;, error = FALSE)</code></pre>
+<p><img src="assets/bic table.png" style="display: block; margin: auto;" /></p>
 <p>The model with the lowest BIC is generally preferred. However, in
 this context, we are looking at the highest BIC values to evaluate the
 fit of different clustering models.</p>
@@ -623,6 +736,51 @@ values for a particular combination of G and model name are consistent
 across repetitions, this indicates that the model fit is stable.
 Conversely, if the BIC values vary significantly, this suggests that the
 model fit is less reliable.`</p>
+<br>
+<p>
+<button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">
+<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+Session information
+</button>
+</p>
+<div id="workflowr-sessioninfo" class="collapse">
+<pre class="r"><code>sessionInfo()</code></pre>
+<pre><code>R version 4.3.1 (2023-06-16 ucrt)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 11 x64 (build 22631)
+
+Matrix products: default
+
+
+locale:
+[1] LC_COLLATE=English_United States.utf8 
+[2] LC_CTYPE=English_United States.utf8   
+[3] LC_MONETARY=English_United States.utf8
+[4] LC_NUMERIC=C                          
+[5] LC_TIME=English_United States.utf8    
+
+time zone: Europe/Budapest
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] workflowr_1.7.1
+
+loaded via a namespace (and not attached):
+ [1] jsonlite_1.8.8    compiler_4.3.1    highr_0.11        promises_1.2.1   
+ [5] Rcpp_1.0.12       stringr_1.5.1     git2r_0.33.0      callr_3.7.6      
+ [9] later_1.3.2       jquerylib_0.1.4   yaml_2.3.8        fastmap_1.1.1    
+[13] R6_2.5.1          knitr_1.48        tibble_3.2.1      rprojroot_2.0.4  
+[17] bslib_0.7.0       pillar_1.9.0      rlang_1.1.1       utf8_1.2.3       
+[21] cachem_1.0.8      stringi_1.8.3     httpuv_1.6.14     xfun_0.46        
+[25] getPass_0.2-4     fs_1.6.3          sass_0.4.9        cli_3.6.1        
+[29] magrittr_2.0.3    ps_1.7.6          digest_0.6.34     processx_3.8.3   
+[33] rstudioapi_0.16.0 lifecycle_1.0.4   vctrs_0.6.3       evaluate_0.24.0  
+[37] glue_1.6.2        whisker_0.4.1     fansi_1.0.4       rmarkdown_2.27   
+[41] httr_1.4.7        tools_4.3.1       pkgconfig_2.0.3   htmltools_0.5.8.1</code></pre>
+</div>
 </div>
 
 
