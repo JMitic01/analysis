@@ -1,0 +1,46 @@
+---
+title: "BIC using Mclust"
+author: "JMitic01"
+date: "2024-07-23"
+output: workflowr::wflow_html
+editor_options:
+  chunk_output_type: console
+---
+## Summary of the `mclust` Package
+
+The `mclust` package provides a comprehensive suite of tools for model-based clustering in  R. This package uses Gaussian Mixture Models (GMMs) to represent clusters in a dataset. Each cluster in `mclust` is modeled using a Gaussian distribution, characterized by its mean and covariance matrix, which determines its shape, orientation, and volume.
+
+The covariance matrix is parameterized through eigenvalue decomposition, expressed as:
+
+$$
+\Sigma = \lambda \mathbf{A} \mathbf{D} \mathbf{A}^T
+$$
+
+where \(\mathbf{A}\) is an orthogonal matrix of eigenvectors, \(\mathbf{D}\) is a diagonal matrix of eigenvalues, and \(\lambda\) is a scaling factor. This parameterization allows for various cluster characteristics, including different shapes, orientations, and volumes. Clusters can have identical or distinct geometric properties based on the model specification.
+
+`mclust` supports various model types including:
+
+- **Equal-volume spherical variance (E)**: Assumes clusters have equal volume and spherical shapes, corresponding to Ward’s method.
+- **Constant variance (V)**: Allows clusters to have varying shapes but constant volume.
+- **Unconstrained variance (U)**: Provides maximum flexibility with no restrictions on the shape, volume, or orientation of the clusters.
+
+In one dimension, models are limited to equal variance (E) or varying variance (V). In higher dimensions, model identifiers like EVI denote models where cluster volumes are equal (E), shapes can vary (V), and orientations are fixed (I). These models are useful for hierarchical clustering and the Expectation-Maximization (EM) algorithm, as outlined in Murtagh and Raftery (1984), Banfield and Raftery (1993), and Celeux and Govaert (1995).
+
+## Model Selection Using BIC with the `mclust` Package
+
+The Bayesian Information Criterion (BIC) is a widely used metric for this purpose. It provides a way to compare different models by incorporating both the likelihood of the model and a penalty for the number of parameters. The BIC is calculated as:
+
+$$
+\text{BIC} = -2 \ln(L) + k \ln(n)
+$$
+
+where \( L \) is the likelihood of the model, \( k \) is the number of parameters, and \( n \) is the number of observations. A lower BIC value indicates a better model fit, adjusted for model complexity.
+
+In my analysis, I am using the `mclust` package in R, an effective tool for model-based clustering that employs BIC to guide model selection. `mclust` fits a range of Gaussian Mixture Models (GMMs) with different covariance structures to the data. It evaluates each model by calculating its BIC, and then selects the model with the lowest BIC value as the optimal model. This approach ensures that the chosen model offers the best trade-off between complexity and goodness-of-fit. By using `mclust`, analysts can systematically compare various clustering models and make informed decisions about the most appropriate model for their data, enhancing the reliability and interpretability of clustering results.
+
+![BIC Table](images/bictable.png)
+
+ The model with the lowest BIC is generally preferred. However, in this context, we are looking at the highest BIC values to evaluate the fit of different clustering models.
+
+By running the clustering algorithm multiple times for each model and cluster size, we can assess the stability of the BIC values. If the BIC values for a particular combination of G and model name are consistent across repetitions, this indicates that the model fit is stable. Conversely, if the BIC values vary significantly, this suggests that the model fit is less reliable.`
+

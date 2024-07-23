@@ -12,16 +12,22 @@ Welcome to my research website.
 
 ## General Summary
 
-[Literature Review](generalsummary.html) \\
-[Fall Data Set](falldata.html)
+-[Literature Review](generalsummary.html) 
+
+-[Fall Data Set](falldata.html)
 
 
 ## Stability Measures
 
-[ARI Index](stabilitymeasures.Rmd)
+[ARI Index](stabilitymeasures.html)
 
 ## Model Selection using BIC
 
-Here is the link:
+-[BIC using Mclst](bic.html)
 
 ## Results
+
+-[SA15](SA15.html)
+
+-[SA08](SA08.html)
+
