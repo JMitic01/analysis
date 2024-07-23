@@ -38,7 +38,11 @@ where \( L \) is the likelihood of the model, \( k \) is the number of parameter
 
 In my analysis, I am using the `mclust` package in R, an effective tool for model-based clustering that employs BIC to guide model selection. `mclust` fits a range of Gaussian Mixture Models (GMMs) with different covariance structures to the data. It evaluates each model by calculating its BIC, and then selects the model with the lowest BIC value as the optimal model. This approach ensures that the chosen model offers the best trade-off between complexity and goodness-of-fit. By using `mclust`, analysts can systematically compare various clustering models and make informed decisions about the most appropriate model for their data, enhancing the reliability and interpretability of clustering results.
 
-![BIC Table](images/bictable.png)
+
+```{r bic-image}
+
+knitr::include_graphics("assets/bic table.png", error = FALSE)
+```
 
  The model with the lowest BIC is generally preferred. However, in this context, we are looking at the highest BIC values to evaluate the fit of different clustering models.
 

@@ -153,7 +153,7 @@ ari_results <- map_df(n_values, function(n) {
 })
 
 ari_results <- ari_results %>% filter(!is.na(ARI))
-print(ari_results)
+#print(ari_results)
 ```
 The ARI results for n_fraction = 0.75 show a range of values, indicating variability in the clustering stability when 75% of the data is used. The ARI values range from a minimum of 0.4917510 to a maximum of 0.9363551, with an average around 0.614. High ARI values (e.g., 0.9363551, 0.8535171, 0.8601944) indicate strong agreement with the true cluster structure, while lower values (e.g., 0.4917510, 0.4973059) suggest less stability in some instances.\\
 For n_fraction = 0.50, the ARI results demonstrate a wider range and more variability. The ARI values range from a low of 0.2814336 to a high of 0.8155492, with an average slightly lower than the 0.75 fraction, around 0.598. This suggests that reducing the data to 50% can introduce more instability in the clustering results. The presence of lower ARI values (e.g., 0.2814336, 0.4516007) highlights the increased sensitivity to the choice of data subset, while higher values (e.g., 0.8155492, 0.7915754) still indicate good clustering stability in some cases.\\
@@ -257,14 +257,14 @@ ari_results_G10 <- final_ari_results %>% filter(G == 10)
 
 
 # Print the ARI results for each G value
-print("ARI results for G = 3:")
-print(ari_results_G3)
+#print("ARI results for G = 3:")
+#print(ari_results_G3)
 
-print("ARI results for G = 4:")
-print(ari_results_G4)
+#print("ARI results for G = 4:")
+#print(ari_results_G4)
 
-print("ARI results for G = 5:")
-print(ari_results_G5)
+#print("ARI results for G = 5:")
+#print(ari_results_G5)
 
 # Plot the ARI results
 ggplot(final_ari_results, aes(x = as.factor(G), y = ARI, fill = as.factor(n_fraction))) +

@@ -154,7 +154,7 @@ ari_results <- map_df(n_values, function(n) {
 })
 
 ari_results <- ari_results %>% filter(!is.na(ARI))
-print(ari_results)
+#print(ari_results)
 ```
 The Adjusted Rand Index (ARI) results provide insight into the stability and consistency of clustering as the size of the data fraction (n_fraction) changes. When n=0.75, the ARI values range from 0.5256939 to 1.0000000, with most values clustering around higher scores, indicating a generally stable clustering performance with some variability. When the data fraction is reduced to 0.50 the ARI scores range from 0.4307185 to 1.0000000, suggesting slightly less stability. Finally, at n=0.25, the ARI ranges from 0.5289797 to 1.0000000, and show a decrease in consistency compared to higher data fractions. This pattern indicates that while high ARI scores can still be achieved with smaller data fractions, the clustering performance becomes less stable and more sensitive to data size reduction.
 
