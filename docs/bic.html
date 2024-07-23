@@ -9,9 +9,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="JMitic01" />
 
+<meta name="date" content="2024-07-23" />
 
-<title>Home</title>
+<title>BIC using Mclust</title>
 
 <script src="site_libs/header-attrs-2.27/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -29,6 +31,9 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -231,6 +236,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -238,6 +306,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -281,7 +359,9 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Home</h1>
+<h1 class="title toc-ignore">BIC using Mclust</h1>
+<h4 class="author">JMitic01</h4>
+<h4 class="date">2024-07-23</h4>
 
 </div>
 
@@ -413,8 +493,8 @@ have uncommitted changes.
 
 <p>
 These are the previous versions of the repository in which changes were
-made to the R Markdown (<code>analysis/index.Rmd</code>) and HTML
-(<code>docs/index.html</code>) files. If you’ve configured a remote Git
+made to the R Markdown (<code>analysis/bic.Rmd</code>) and HTML
+(<code>docs/bic.html</code>) files. If you’ve configured a remote Git
 repository (see <code>?wflow_git_remote</code>), click on the hyperlinks
 in the table below to view the files as they were in that past version.
 </p>
@@ -445,7 +525,7 @@ Message
 Rmd
 </td>
 <td>
-<a href="https://github.com/JMitic01/analysis/blob/ccb1e534e133f5d65370d7fef722192abd6839ce/analysis/index.Rmd" target="_blank">ccb1e53</a>
+<a href="https://github.com/JMitic01/analysis/blob/ccb1e534e133f5d65370d7fef722192abd6839ce/analysis/bic.Rmd" target="_blank">ccb1e53</a>
 </td>
 <td>
 JMitic01
@@ -457,91 +537,6 @@ JMitic01
 added results files
 </td>
 </tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/JMitic01/analysis/48aabcd9d41285b1e92ec4fc56441ad6ff23bf11/docs/index.html" target="_blank">48aabcd</a>
-</td>
-<td>
-JMitic01
-</td>
-<td>
-2024-07-23
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-Rmd
-</td>
-<td>
-<a href="https://github.com/JMitic01/analysis/blob/01012c8cf9101ec0a38a8670956e84d5a920bf65/analysis/index.Rmd" target="_blank">01012c8</a>
-</td>
-<td>
-JMitic01
-</td>
-<td>
-2024-07-23
-</td>
-<td>
-Update wwebsite
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/JMitic01/analysis/b7287401a4da2accbe58be9fe5c0181b5ead7f07/docs/index.html" target="_blank">b728740</a>
-</td>
-<td>
-JMitic01
-</td>
-<td>
-2024-07-23
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-Rmd
-</td>
-<td>
-<a href="https://github.com/JMitic01/analysis/blob/f49981e7f48b76092a8c931fe389b9b875aac6cd/analysis/index.Rmd" target="_blank">f49981e</a>
-</td>
-<td>
-JMitic01
-</td>
-<td>
-2024-07-23
-</td>
-<td>
-Initial commit
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/JMitic01/analysis/f49981e7f48b76092a8c931fe389b9b875aac6cd/docs/index.html" target="_blank">f49981e</a>
-</td>
-<td>
-JMitic01
-</td>
-<td>
-2024-07-23
-</td>
-<td>
-Initial commit
-</td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -549,24 +544,85 @@ Initial commit
 </div>
 </div>
 </div>
-<p>Welcome to my research website.</p>
-<div id="general-summary" class="section level2">
-<h2>General Summary</h2>
-<p>-<a href="generalsummary.html">Literature Review</a></p>
-<p>-<a href="falldata.html">Fall Data Set</a></p>
+<div id="summary-of-the-mclust-package" class="section level2">
+<h2>Summary of the <code>mclust</code> Package</h2>
+<p>The <code>mclust</code> package provides a comprehensive suite of
+tools for model-based clustering in R. This package uses Gaussian
+Mixture Models (GMMs) to represent clusters in a dataset. Each cluster
+in <code>mclust</code> is modeled using a Gaussian distribution,
+characterized by its mean and covariance matrix, which determines its
+shape, orientation, and volume.</p>
+<p>The covariance matrix is parameterized through eigenvalue
+decomposition, expressed as:</p>
+<p><span class="math display">\[
+\Sigma = \lambda \mathbf{A} \mathbf{D} \mathbf{A}^T
+\]</span></p>
+<p>where <span class="math inline">\(\mathbf{A}\)</span> is an
+orthogonal matrix of eigenvectors, <span
+class="math inline">\(\mathbf{D}\)</span> is a diagonal matrix of
+eigenvalues, and <span class="math inline">\(\lambda\)</span> is a
+scaling factor. This parameterization allows for various cluster
+characteristics, including different shapes, orientations, and volumes.
+Clusters can have identical or distinct geometric properties based on
+the model specification.</p>
+<p><code>mclust</code> supports various model types including:</p>
+<ul>
+<li><strong>Equal-volume spherical variance (E)</strong>: Assumes
+clusters have equal volume and spherical shapes, corresponding to Ward’s
+method.</li>
+<li><strong>Constant variance (V)</strong>: Allows clusters to have
+varying shapes but constant volume.</li>
+<li><strong>Unconstrained variance (U)</strong>: Provides maximum
+flexibility with no restrictions on the shape, volume, or orientation of
+the clusters.</li>
+</ul>
+<p>In one dimension, models are limited to equal variance (E) or varying
+variance (V). In higher dimensions, model identifiers like EVI denote
+models where cluster volumes are equal (E), shapes can vary (V), and
+orientations are fixed (I). These models are useful for hierarchical
+clustering and the Expectation-Maximization (EM) algorithm, as outlined
+in Murtagh and Raftery (1984), Banfield and Raftery (1993), and Celeux
+and Govaert (1995).</p>
 </div>
-<div id="stability-measures" class="section level2">
-<h2>Stability Measures</h2>
-<p><a href="stabilitymeasures.html">ARI Index</a></p>
+<div id="model-selection-using-bic-with-the-mclust-package"
+class="section level2">
+<h2>Model Selection Using BIC with the <code>mclust</code> Package</h2>
+<p>The Bayesian Information Criterion (BIC) is a widely used metric for
+this purpose. It provides a way to compare different models by
+incorporating both the likelihood of the model and a penalty for the
+number of parameters. The BIC is calculated as:</p>
+<p><span class="math display">\[
+\text{BIC} = -2 \ln(L) + k \ln(n)
+\]</span></p>
+<p>where <span class="math inline">\(L\)</span> is the likelihood of the
+model, <span class="math inline">\(k\)</span> is the number of
+parameters, and <span class="math inline">\(n\)</span> is the number of
+observations. A lower BIC value indicates a better model fit, adjusted
+for model complexity.</p>
+<p>In my analysis, I am using the <code>mclust</code> package in R, an
+effective tool for model-based clustering that employs BIC to guide
+model selection. <code>mclust</code> fits a range of Gaussian Mixture
+Models (GMMs) with different covariance structures to the data. It
+evaluates each model by calculating its BIC, and then selects the model
+with the lowest BIC value as the optimal model. This approach ensures
+that the chosen model offers the best trade-off between complexity and
+goodness-of-fit. By using <code>mclust</code>, analysts can
+systematically compare various clustering models and make informed
+decisions about the most appropriate model for their data, enhancing the
+reliability and interpretability of clustering results.</p>
+<div class="float">
+<img src="images/bictable.png" alt="BIC Table" />
+<div class="figcaption">BIC Table</div>
 </div>
-<div id="model-selection-using-bic" class="section level2">
-<h2>Model Selection using BIC</h2>
-<p>-<a href="bic.html">BIC using Mclst</a></p>
-</div>
-<div id="results" class="section level2">
-<h2>Results</h2>
-<p>-<a href="SA15.html">SA15</a></p>
-<p>-<a href="SA08.html">SA08</a></p>
+<p>The model with the lowest BIC is generally preferred. However, in
+this context, we are looking at the highest BIC values to evaluate the
+fit of different clustering models.</p>
+<p>By running the clustering algorithm multiple times for each model and
+cluster size, we can assess the stability of the BIC values. If the BIC
+values for a particular combination of G and model name are consistent
+across repetitions, this indicates that the model fit is stable.
+Conversely, if the BIC values vary significantly, this suggests that the
+model fit is less reliable.`</p>
 </div>
 
 
@@ -585,6 +641,8 @@ footer is added to webpages before the MathJax javascript. -->
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -617,6 +675,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
