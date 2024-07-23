@@ -1,7 +1,7 @@
-name: analysis
+name: mixture-models-stability
 output_dir: ../docs
 navbar:
-  title: analysis
+  title: mixture-models-stability
   left:
   - text: Home
     href: index.html
