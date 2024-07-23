@@ -9,9 +9,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="JMitic01" />
 
+<meta name="date" content="2024-07-23" />
 
-<title>Home</title>
+<title>General Summary</title>
 
 <script src="site_libs/header-attrs-2.27/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -29,6 +31,9 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -231,6 +236,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -238,6 +306,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -281,7 +359,9 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Home</h1>
+<h1 class="title toc-ignore">General Summary</h1>
+<h4 class="author">JMitic01</h4>
+<h4 class="date">2024-07-23</h4>
 
 </div>
 
@@ -410,10 +490,11 @@ have uncommitted changes.
 
 <p>
 These are the previous versions of the repository in which changes were
-made to the R Markdown (<code>analysis/index.Rmd</code>) and HTML
-(<code>docs/index.html</code>) files. If you’ve configured a remote Git
-repository (see <code>?wflow_git_remote</code>), click on the hyperlinks
-in the table below to view the files as they were in that past version.
+made to the R Markdown (<code>analysis/generalsummary.Rmd</code>) and
+HTML (<code>docs/generalsummary.html</code>) files. If you’ve configured
+a remote Git repository (see <code>?wflow_git_remote</code>), click on
+the hyperlinks in the table below to view the files as they were in that
+past version.
 </p>
 <div class="table-responsive">
 <table class="table table-condensed table-hover">
@@ -442,7 +523,7 @@ Message
 Rmd
 </td>
 <td>
-<a href="https://github.com/JMitic01/analysis/blob/01012c8cf9101ec0a38a8670956e84d5a920bf65/analysis/index.Rmd" target="_blank">01012c8</a>
+<a href="https://github.com/JMitic01/analysis/blob/01012c8cf9101ec0a38a8670956e84d5a920bf65/analysis/generalsummary.Rmd" target="_blank">01012c8</a>
 </td>
 <td>
 JMitic01
@@ -454,57 +535,6 @@ JMitic01
 Update wwebsite
 </td>
 </tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/JMitic01/analysis/b7287401a4da2accbe58be9fe5c0181b5ead7f07/docs/index.html" target="_blank">b728740</a>
-</td>
-<td>
-JMitic01
-</td>
-<td>
-2024-07-23
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-Rmd
-</td>
-<td>
-<a href="https://github.com/JMitic01/analysis/blob/f49981e7f48b76092a8c931fe389b9b875aac6cd/analysis/index.Rmd" target="_blank">f49981e</a>
-</td>
-<td>
-JMitic01
-</td>
-<td>
-2024-07-23
-</td>
-<td>
-Initial commit
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/JMitic01/analysis/f49981e7f48b76092a8c931fe389b9b875aac6cd/docs/index.html" target="_blank">f49981e</a>
-</td>
-<td>
-JMitic01
-</td>
-<td>
-2024-07-23
-</td>
-<td>
-Initial commit
-</td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -512,22 +542,146 @@ Initial commit
 </div>
 </div>
 </div>
-<p>Welcome to my research website.</p>
-<div id="general-summary" class="section level2">
-<h2>General Summary</h2>
-<p><a href="generalsummary.html">Literature Review</a> \ <a
-href="falldata.html">Fall Data Set</a></p>
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>Clustering methods are essential tools in data analysis, offering
+insights into the underlying structure of complex datasets. These
+methods group similar data points together, facilitating pattern
+recognition, anomaly detection, and data exploration. Among these
+methods, Gaussian Mixture Models (GMMs) are a powerful probabilistic
+framework that represents data as a mixture of Gaussian distributions. A
+GMM combines multiple Gaussian components, each characterized by its
+mean, covariance, and weight. The statistical model for the GMM is
+represented as:</p>
+<p><span class="math display">\[
+y \sim \sum_{g=1}^{G} \eta_g f(\cdot|\theta_g)
+\]</span></p>
+<p>where <span class="math inline">\(y\)</span> represents the data,
+<span class="math inline">\(\eta_g\)</span> are the weights of the
+components, <span class="math inline">\(f\)</span> denotes the component
+density, and <span class="math inline">\(\theta_g\)</span> represents
+the parameters of each component. Through clustering, GMMs uncover
+hidden patterns within data, enabling informed decision-making and
+comprehensive data understanding.</p>
 </div>
-<div id="stability-measures" class="section level2">
-<h2>Stability Measures</h2>
-<p><a href="stabilitymeasures.Rmd">ARI Index</a></p>
+<div id="exploring-unsupervised-learning-algorithms"
+class="section level2">
+<h2>Exploring Unsupervised Learning Algorithms</h2>
+<p>In the realm of unsupervised learning, several key algorithms play
+significant roles in understanding data structures:</p>
+<ul>
+<li><strong>Gaussian Mixture Model (GMM)</strong>: This probabilistic
+model assumes that data points are generated from a mixture of Gaussian
+distributions, each indicative of a cluster. GMM provides flexibility in
+modeling diverse data through a probabilistic approach.</li>
+<li><strong>Expectation-Maximization (EM) Algorithm</strong>: EM is
+employed to estimate the parameters of the GMM. It iteratively refines
+the model’s fit to the data by alternating between the Expectation
+(E-step) and Maximization (M-step) steps. During the E-step, membership
+probabilities for each data point belonging to different latent classes
+are calculated. The M-step updates parameter estimates based on observed
+and estimated latent variables. Although EM is a powerful tool, it can
+face challenges such as converging to local maxima or encountering
+singularities.</li>
+<li><strong>K-means Clustering</strong>: This technique involves
+partitioning a set of objects into <span
+class="math inline">\(k\)</span> clusters by minimizing the sum of
+squared distances between the objects and their designated cluster mean.
+K-means is known for its efficiency and simplicity but lacks the
+flexibility of GMM in modeling diverse data.</li>
+</ul>
 </div>
-<div id="model-selection-using-bic" class="section level2">
-<h2>Model Selection using BIC</h2>
-<p>Here is the link:</p>
+<div id="model-selection-in-mixture-models" class="section level2">
+<h2>Model Selection in Mixture Models</h2>
+<p>Selecting the appropriate number of components <span
+class="math inline">\(G\)</span> in a mixture model is crucial for
+accurate data representation and is considered a density estimation
+problem. The primary goal is to estimate the underlying data
+distribution by identifying the true number of mixture components,
+assuming that the data distribution is a finite mixture distribution.
+The true order of the mixture model is defined as the smallest value of
+<span class="math inline">\(G\)</span> for which each component is
+distinct and has a positive mixing proportion. Each component’s
+parameters (<span class="math inline">\(\theta_g\)</span>) must be
+unique, and each mixing proportion (<span
+class="math inline">\(\eta_g\)</span>) must be greater than zero.</p>
+<div id="challenges-in-model-selection" class="section level3">
+<h3>Challenges in Model Selection</h3>
+<p>One common issue in model selection is overfitting ambiguity. A
+mixture model with <span class="math inline">\(G\)</span> components
+might be misrepresented as having <span class="math inline">\(G +
+1\)</span> components, especially when an additional component has a
+zero mixing proportion or identical parameters to an existing component.
+This issue affects both frequentist and Bayesian methods, complicating
+the task of determining the best number of components. For instance,
+posterior inference using methods like Full Conditional Gibbs sampling
+can help, but visualization and model comparison, such as comparing
+models with <span class="math inline">\(G = 3\)</span> and <span
+class="math inline">\(G = 4\)</span>, may reveal that the differences in
+density capture the largest observations or skewness in a cluster. This
+indicates the challenge in deciding which model best represents the
+data.</p>
 </div>
-<div id="results" class="section level2">
-<h2>Results</h2>
+<div id="information-criteria-for-order-selection"
+class="section level3">
+<h3>Information Criteria for Order Selection</h3>
+<p>Information criteria such as Akaike Information Criterion (AIC) and
+Bayesian Information Criterion (BIC) are commonly used for model order
+selection:</p>
+<ul>
+<li><p><strong>AIC (Akaike Information Criterion)</strong>: AIC aims to
+minimize the divergence between the model and the true distribution and
+is defined as:</p>
+<p><span class="math display">\[
+\text{AIC}(G) = -2 \log(L_o(\theta_G; G)) + 2 \nu_G
+\]</span></p>
+<p>where <span class="math inline">\(\nu_G\)</span> is the number of
+free parameters.</p></li>
+<li><p><strong>BIC (Bayesian Information Criterion)</strong>: BIC is the
+value of the maximized loglikelihood with a penalty on the number of
+parameters in the model, and allows comparison of models with differing
+parameterizations and/or differing numbers of clusters. In general the
+larger the value of the BIC, the stronger the evidence for the model and
+number of clusters. BIC approximates the marginal likelihood and is
+defined as:</p>
+<p><span class="math display">\[
+\text{BIC}(G) = -2 \log(L_o(\theta_G; G)) + \nu_G \log(n)
+\]</span></p>
+<p>BIC is consistent under certain conditions and tends to select the
+true order as the sample size grows. While AIC is good for predictive
+accuracy, it may overestimate the number of components, whereas BIC can
+overfit if not properly adjusted. Alternatives like sBIC and AIC3 offer
+refinements for specific contexts.</p></li>
+</ul>
+</div>
+<div id="advanced-criteria-and-methods" class="section level3">
+<h3>Advanced Criteria and Methods</h3>
+<ul>
+<li><p><strong>Slope Heuristics</strong>: Introduced by Birgé and
+Massart, this method adjusts the penalty for model complexity based on
+the observed-data log likelihood. The penalty function is proportional
+to the number of free parameters and is adjusted using data-driven slope
+estimation (DDSE). The optimal penalty, approximately twice the minimal
+penalty, helps in selecting more parsimonious models compared to
+criteria like BIC.</p></li>
+<li><p><strong>Deviance Information Criterion (DIC)</strong>: Developed
+by Spiegelhalter et al., DIC balances goodness of fit and model
+complexity but faces challenges such as label switching and handling
+unobserved data. Approaches like DIC2 and DIC4 focus on marginal
+distributions and integrate over latent variables to improve
+robustness.</p></li>
+</ul>
+</div>
+</div>
+<div id="conclusion" class="section level2">
+<h2>Conclusion</h2>
+<p>In summary, GMMs and clustering algorithms like k-means and EM offer
+powerful methods for uncovering data patterns. The choice of the number
+of mixture components is a critical decision, involving navigating
+between overfitting issues, leveraging likelihood ratio tests, and
+applying information criteria. Each method has its strengths and
+limitations, requiring careful consideration of the data and model
+complexity to ensure accurate and meaningful clustering results.</p>
 </div>
 
 
@@ -546,6 +700,8 @@ footer is added to webpages before the MathJax javascript. -->
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -578,6 +734,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

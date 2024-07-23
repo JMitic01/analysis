@@ -9,9 +9,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="JMitic01" />
 
+<meta name="date" content="2024-07-23" />
 
-<title>Home</title>
+<title>stabilitymeasures</title>
 
 <script src="site_libs/header-attrs-2.27/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -29,6 +31,9 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -231,6 +236,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -238,6 +306,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -281,7 +359,9 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Home</h1>
+<h1 class="title toc-ignore">stabilitymeasures</h1>
+<h4 class="author">JMitic01</h4>
+<h4 class="date">2024-07-23</h4>
 
 </div>
 
@@ -410,10 +490,11 @@ have uncommitted changes.
 
 <p>
 These are the previous versions of the repository in which changes were
-made to the R Markdown (<code>analysis/index.Rmd</code>) and HTML
-(<code>docs/index.html</code>) files. If you’ve configured a remote Git
-repository (see <code>?wflow_git_remote</code>), click on the hyperlinks
-in the table below to view the files as they were in that past version.
+made to the R Markdown (<code>analysis/stabilitymeasures.Rmd</code>) and
+HTML (<code>docs/stabilitymeasures.html</code>) files. If you’ve
+configured a remote Git repository (see <code>?wflow_git_remote</code>),
+click on the hyperlinks in the table below to view the files as they
+were in that past version.
 </p>
 <div class="table-responsive">
 <table class="table table-condensed table-hover">
@@ -442,7 +523,7 @@ Message
 Rmd
 </td>
 <td>
-<a href="https://github.com/JMitic01/analysis/blob/01012c8cf9101ec0a38a8670956e84d5a920bf65/analysis/index.Rmd" target="_blank">01012c8</a>
+<a href="https://github.com/JMitic01/analysis/blob/01012c8cf9101ec0a38a8670956e84d5a920bf65/analysis/stabilitymeasures.Rmd" target="_blank">01012c8</a>
 </td>
 <td>
 JMitic01
@@ -454,57 +535,6 @@ JMitic01
 Update wwebsite
 </td>
 </tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/JMitic01/analysis/b7287401a4da2accbe58be9fe5c0181b5ead7f07/docs/index.html" target="_blank">b728740</a>
-</td>
-<td>
-JMitic01
-</td>
-<td>
-2024-07-23
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-Rmd
-</td>
-<td>
-<a href="https://github.com/JMitic01/analysis/blob/f49981e7f48b76092a8c931fe389b9b875aac6cd/analysis/index.Rmd" target="_blank">f49981e</a>
-</td>
-<td>
-JMitic01
-</td>
-<td>
-2024-07-23
-</td>
-<td>
-Initial commit
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/JMitic01/analysis/f49981e7f48b76092a8c931fe389b9b875aac6cd/docs/index.html" target="_blank">f49981e</a>
-</td>
-<td>
-JMitic01
-</td>
-<td>
-2024-07-23
-</td>
-<td>
-Initial commit
-</td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -512,22 +542,127 @@ Initial commit
 </div>
 </div>
 </div>
-<p>Welcome to my research website.</p>
-<div id="general-summary" class="section level2">
-<h2>General Summary</h2>
-<p><a href="generalsummary.html">Literature Review</a> \ <a
-href="falldata.html">Fall Data Set</a></p>
+<div id="introduction" class="section level2">
+<h2>1. Introduction</h2>
+<p>Stability measures are essential for evaluating the reliability and
+robustness of clustering methods. They help in assessing whether the
+clustering results are consistent across different datasets or subsets
+of the data. This document discusses stability measures with a focus on
+the Adjusted Rand Index (ARI), the general framework for assessing
+stability, and methods to evaluate stability through subsampling.</p>
 </div>
-<div id="stability-measures" class="section level2">
-<h2>Stability Measures</h2>
-<p><a href="stabilitymeasures.Rmd">ARI Index</a></p>
+<div id="adjusted-rand-index-ari" class="section level2">
+<h2>2. Adjusted Rand Index (ARI)</h2>
+<p>The Adjusted Rand Index (ARI) is a widely used metric for evaluating
+the similarity between two clusterings. It adjusts the Rand Index (RI)
+for the chance grouping of elements, providing a measure of clustering
+agreement that ranges from -1 to 1.</p>
+<div id="definition" class="section level3">
+<h3>2.1 Definition</h3>
+<p>The ARI is defined as:</p>
+<p><span class="math display">\[ \text{ARI} = \frac{\text{RI} -
+\text{Expected RI}}{\text{Max RI} - \text{Expected RI}} \]</span></p>
+<p>where:</p>
+<ul>
+<li><strong>RI</strong> is the Rand Index.</li>
+<li><strong>Expected RI</strong> is the expected Rand Index under the
+null hypothesis of random clustering.</li>
+<li><strong>Max RI</strong> is the maximum possible Rand Index.</li>
+</ul>
 </div>
-<div id="model-selection-using-bic" class="section level2">
-<h2>Model Selection using BIC</h2>
-<p>Here is the link:</p>
+<div id="calculation" class="section level3">
+<h3>2.2 Calculation</h3>
+<p>Given two clusterings <span class="math inline">\(C_1\)</span> and
+<span class="math inline">\(C_2\)</span>, let <span
+class="math inline">\(a\)</span>, <span
+class="math inline">\(b\)</span>, <span
+class="math inline">\(c\)</span>, and <span
+class="math inline">\(d\)</span> be the counts of pairs of objects that
+are:</p>
+<ul>
+<li><strong>a</strong>: in the same cluster in both <span
+class="math inline">\(C_1\)</span> and <span
+class="math inline">\(C_2\)</span>.</li>
+<li><strong>b</strong>: in the same cluster in <span
+class="math inline">\(C_1\)</span> but in different clusters in <span
+class="math inline">\(C_2\)</span>.</li>
+<li><strong>c</strong>: in different clusters in <span
+class="math inline">\(C_1\)</span> but in the same cluster in <span
+class="math inline">\(C_2\)</span>.</li>
+<li><strong>d</strong>: in different clusters in both <span
+class="math inline">\(C_1\)</span> and <span
+class="math inline">\(C_2\)</span>.</li>
+</ul>
+<p>The Rand Index is then:</p>
+<p><span class="math display">\[ \text{RI} = \frac{a + d}{a + b + c + d}
+\]</span></p>
+<p>The Expected RI and Max RI are computed based on the probabilities of
+randomly assigning objects to clusters.</p>
 </div>
-<div id="results" class="section level2">
-<h2>Results</h2>
+<div id="global-replicability" class="section level3">
+<h3>2.2.1 Global Replicability</h3>
+<p>Global replicability evaluates how consistent a clustering solution
+is across perturbed versions of the dataset. The steps are:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Clustering</strong>:
+<ul>
+<li>Apply the clustering algorithm to the original dataset <span
+class="math inline">\(X\)</span> to obtain a partition.</li>
+<li>Apply the clustering algorithm to each perturbed dataset <span
+class="math inline">\(X^{(b)}\)</span> to obtain corresponding
+partitions.</li>
+</ul></li>
+<li><strong>Comparing Partitions</strong>:
+<ul>
+<li>For each perturbed dataset <span
+class="math inline">\(X^{(b)}\)</span>, calculate the minimal matching
+distance between the clustering partition obtained from equation
+(3).</li>
+<li><strong>Equation for Minimal Matching Distance</strong>: <span
+class="math display">\[
+d_{\text{min}} = \min_{\pi \in \Pi} \sum_{i=1}^k \sum_{j=1}^k
+\text{dist}(C_i, C_j^\pi)
+\]</span> where <span class="math inline">\(\Pi\)</span> represents all
+possible permutations of clusters, <span
+class="math inline">\(C_i\)</span> and <span
+class="math inline">\(C_j^\pi\)</span> are the clusters from the
+original and perturbed datasets, respectively, and <span
+class="math inline">\(\text{dist}\)</span> is a distance metric between
+clusters.</li>
+</ul></li>
+<li><strong>Averaging the Distances</strong>:
+<ul>
+<li>The stability measure is obtained by averaging these minimal
+matching distances across all <span class="math inline">\(B\)</span>
+perturbed datasets.</li>
+</ul></li>
+</ol>
+</div>
+</div>
+<div id="general-framework-for-assessing-stability"
+class="section level2">
+<h2>3. General Framework for Assessing Stability</h2>
+<p>Assessing stability involves evaluating how clustering results change
+when the data is varied. The general framework includes the following
+steps:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Clustering Multiple Subsamples</strong>: Perform clustering
+on multiple subsets of the data.</li>
+<li><strong>Evaluating Consistency</strong>: Measure how consistent the
+clustering results are across these subsets.</li>
+<li><strong>Quantifying Stability</strong>: Use stability measures to
+quantify the level of consistency.</li>
+</ol>
+<div id="evaluating-consistency" class="section level3">
+<h3>3.2 Evaluating Consistency</h3>
+<p>The consistency of clustering results can be evaluated by comparing
+the cluster assignments across different subsamples. Metrics such as the
+ARI can be used to measure the similarity between clusterings on
+different subsets. In our ‘Result’ section we divided the data into
+three subsets (n=0.75, n=0.5, and n=0.25). In addition, we quantified
+the stability by averaging stability measures across all subsamples. A
+higher average indicates greater stability.</p>
+</div>
 </div>
 
 
@@ -546,6 +681,8 @@ footer is added to webpages before the MathJax javascript. -->
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -578,6 +715,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
