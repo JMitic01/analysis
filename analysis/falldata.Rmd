@@ -17,3 +17,4 @@ This work introduces a publicly available dataset of falls and activities of dai
 
 The raw data are provided as 3-dimensional accelerator vectors $(a_x(t), a_y(t), a_z(t) )$  collected at a 200 Hz frequency. The data were pre-processed by calculating the signal magnitude vector (SMV) at each time point as $SMV _t= \sqrt{ a_x(t)^2 +  a_y(t)^2 + a_z(t)^2 }$.  Three features were extracted from each activity for subsequent analyses: $max = max (SMV_t)$, $min = min(SMV_t)$, and $max_ diff = max ( | SMV_t - SMV_{t-1} | )$ .
 
+
